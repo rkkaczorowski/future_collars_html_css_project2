@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Project02</title>
+		<title>Project_1</title>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,85 +19,90 @@
 	</head>
 	<body>
 		<header>
-			<nav class="main-nav">
-				<div class="nav-container container">
-					<a href="#">nazwa firmy</a>
-				</div>
+			<nav class="main-nav"><div class="nav-container container">
+				<a href="#">moja firma</a>
+				<ul class="nav-list">
+					<li class="nav-item nav-link"><a href="#about">o nas</a></li>
+					<li class="nav-item nav-link"><a href="#offer">oferta</a></li>
+					<li class="nav-item link-contact">
+						<a href="#" disabled>kontakt</a>
+					</li>
+				</ul></div>
 			</nav>
 			<div class="main-header">
 				<div class="header-shadow">
 					<section class="header-container container">
-						<h1 class="main-title">
-							Nasza firma oferuje najwyższej jakości produkty.
-						</h1>
-						<p class="main-subtitle subtitle">
-							Nie wierz nam na słowo - sprawdź
-						</p>
-						<a href="#offer" class="offer-link header-offer">oferta</a>
+							<h1 class="main-title header-title">
+								Nasza firma oferuje najwyższej jakości produkty.
+							</h1>
+						<p class="main-subtitle subtitle">Nie wierz nam na słowo - sprawdź</p>
+						<a href="#offer" class="offer-link header-offer"
+							>oferta</a>
 					</section>
 				</div>
 			</div>
 		</header>
 		<main>
-			<section class="section-about">
-				<div class="container about-container">
-					<h2 class="main-title">Nasi specjaliści</h2>
-					<div class="personal-photo ceo"></div>
-					<p class="centered">
-						<span class="subtitle about-subtitle">Imię Nazwisko [ dział ]</span>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
-						massa et lacus egestas cursus a non magna. Fusce scelerisque blandit
-						nunc, id malesuada ex lobortis a. Integer felis nisi, tempor
-						elementum lorem in, varius pellentesque ligula. Duis efficitur
-						lacinia enim, non tincidunt libero ultrices in.
-					</p>
-					<div class="personal-photo dataanalyst"></div>
-					<p class="centered">
-						<span class="subtitle about-subtitle">Imię Nazwisko [ dział ]</span>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
-						massa et lacus egestas cursus a non magna. Fusce scelerisque blandit
-						nunc, id malesuada ex lobortis a. Integer felis nisi, tempor
-						elementum lorem in, varius pellentesque ligula. Duis efficitur
-						lacinia enim, non tincidunt libero ultrices in.
-					</p>
+			<section id="about" class="section-about">
+				<div class="container section-container">
+					<h2 class="main-title about-title">Nasi specjaliści</h2>
+					<div class="about-container">
+						<div class="personal-photo ceo"></div>
+						<p class="centered">
+							<span class="subtitle about-subtitle"
+								>Imię Nazwisko [ dział ]</span
+							>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
+							massa et lacus egestas cursus a non magna. Fusce scelerisque
+							blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
+							tempor elementum lorem in, varius pellentesque ligula. Duis
+							efficitur lacinia enim, non tincidunt libero ultrices in.
+						</p>
+					</div>
+					<div class="about-container">
+						<div class="personal-photo dataanalyst photo"></div>
+						<p class="centered reversetext">
+							<span class="subtitle about-subtitle reverse"
+								>Imię Nazwisko [ dział ]</span
+							>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
+							massa et lacus egestas cursus a non magna. Fusce scelerisque
+							blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
+							tempor elementum lorem in, varius pellentesque ligula. Duis
+							efficitur lacinia enim, non tincidunt libero ultrices in.
+						</p>
+					</div>
 				</div>
 			</section>
 			<section id="offer" class="section-offer">
-				<div class="container about-container">
-					<h3 class="offer-title">Czym zajmuje się nasza firma?</h3>
+				<div class="container section-container">
+					<h3 class="main-title about-title">Czym zajmuje się nasza firma?</h3>
 					<div class="item-container">
-						<div class="item">
+						<div class="item first-in-row">
 							<span class="dot"></span>
 							<p class="service">Usługa 1</p>
-							<span>(nowość)</span>
+							<span class="text">(nowość)</span>
 						</div>
-						<div class="item"><p class="service">Usługa 2</p></div>
+						<div class="item first-in-row"><p class="service">Usługa 2</p></div>
 						<div class="item"><p class="service">Usługa 3</p></div>
-						<div class="item"><p class="service">Usługa 4</p></div>
-						<div class="item"><p class="service">Usługa 5</p></div>
+						<div class="item first-in-row"><p class="service">Usługa 4</p></div>
+						<div class="item first-in-row"><p class="service">Usługa 5</p></div>
 						<div class="item"><p class="service">Usługa 6</p></div>
 					</div>
 				</div>
 			</section>
 		</main>
 		<footer class="footer-content">
-			<div class="footer-container">
-				<p class="footer-text">
-					Nazwa firmy - wszelkie prawa zastrzeżone, 2019
-				</p>
-				<nav class="footer-nav">
-					<ul>
-						<li>
-							<a href="#"><i class="fa-brands fa-instagram social-icon"></i></a>
-							<a href="#"
-								><i
-									class="fa-brands fa-square-facebook social-icon second-icon"
-								></i
-							></a>
-						</li>
-					</ul>
-				</nav>
-			</div>
+			<div class="footer-container"><p class="footer-text">Nazwa firmy - wszelkie prawa zastrzeżone, 2019</p>
+			<nav class="footer-nav">
+				<ul>
+					<li>
+						<a href="#"><i class="fa-brands fa-instagram social-icon"></i></a>
+						<a href="#"
+							><i class="fa-brands fa-square-facebook social-icon second-icon"></i
+						></a>
+					</li>
+				</ul>
 		</footer>
 	</body>
 </html>
